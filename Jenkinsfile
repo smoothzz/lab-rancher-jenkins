@@ -6,7 +6,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/smoothzz/lab-rancher-jenkins', branch:"main"
+        git 'https://github.com/smoothzz/lab-rancher-jenkins'
       }
     }
 
