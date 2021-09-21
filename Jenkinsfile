@@ -1,12 +1,12 @@
 pipeline {
 
-  agent any
+  agent { label 'kubepod' }
 
   stages {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/smoothzz/lab-rancher-jenkins'
+        git url:'https://github.com/smoothzz/lab-rancher-jenkins', branch:'main'
       }
     }
 
